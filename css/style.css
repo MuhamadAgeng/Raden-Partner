@@ -63,7 +63,7 @@ body {
 .navbar .navbar-nav a {
   color: #fff;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin: 0 1rem;
 }
 
@@ -106,7 +106,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  position: relative;
   position: relative;
 }
 
@@ -189,15 +188,17 @@ body {
 
 .about .rows .content{
   flex: 1 1 35rem;
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 }
 
 .about .rows .content h3 {
+  margin-top: 3rem;
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
 
 .about .rows .content p {
+  margin-top: 1rem;
   margin-bottom: 0.8rem;
   font-size: 1.3rem;
   font-weight: 100;
@@ -231,7 +232,7 @@ body {
 footer {
   background-color: var(--primary);
   text-align: center;
-  padding: 1rem 0 3rem;
+  padding: 0.1rem 0 1rem;
   margin-top: 3rem;
 }
 
@@ -300,7 +301,7 @@ footer .credit a {
 }
 
 .contact .row .wa {
-  margin-top: 1rem;
+  margin-top: 5rem;
   display: inline-block;
   padding: 1rem 1.5rem;
   font-size: 1rem;
@@ -364,8 +365,14 @@ footer .credit a {
     flex-wrap: wrap;
   }
 
+  .about .rows .about-img {
+    display: flex;
+    justify-content: center;
+  }
+
   .about .rows .about-img img {
-    height: 24rem;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
     object-position: center;
   }
@@ -397,6 +404,14 @@ footer .credit a {
 
   .contact .row form button {
     padding: 0;
+  }
+
+  .contact .row .wa {
+    margin-bottom: 3rem;
+  }
+
+  .row form {
+    padding: 2rem 1rem;
   }
 }
 
